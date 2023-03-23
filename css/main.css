@@ -524,11 +524,11 @@ margin-right: 5rem;
   font-style: normal;
 }
 .project-explanation p{
-  margin: 0rem;
   font-weight:100;
   font-size: medium;
   font-style: normal;
   margin-bottom: 1rem;
+  margin-right: 5rem;
 }
 
 .project-explanation .project-content{
@@ -549,6 +549,14 @@ margin-right: 5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-right: 2rem;
+}
+
+.grid p{
+  font-weight: normal;
+  font-style: italic;
+  margin-top: -1.25rem;
+  text-align: center;
+  color:#50A85E;
 }
 
 /* End of Project 1 --------------- */
