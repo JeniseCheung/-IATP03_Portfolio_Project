@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jenise Cheung - Simulation</title>
+
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div class="topbanner">
+      <div class="logo"><a href="home.html">Jenise Cheung</a></div>
+        <ul>
+            <li><a href="home.html" class="in-text-link">Home</a></li>
+            <li><a href="about.html" class="in-text-link">About</a></li>
+            <li><a href="#" class ="in-text-link">Resume</a></li>
+        </ul>
+    </div>
+    <div class="line"></div>
+  </header>
+
+  <div class="vertical-line"></div>
+  <section class="index">
+    <div class="index-box">
+      <div class="index-left">
+        <h2>About</h2>
+        <a href="#overview" class ="in-text-link">Overview</a>
+        <a href="#process" class ="in-text-link">Process</a>
+        <a href="#challenges" class ="in-text-link">Challenges</a>
+        <a href="#reflection" class ="in-text-link">Reflection</a>
+      </div>
+
+      <div class="citations-right">
+        <div class="starting-intro">
+          <h1>Gloomy Day Clean-Up</h1>
+          <a href="simulation_ext.html" class ="in-text-link version">Click for detailed version</a>
+          <img src="images/room.jpg"  alt="gloomy day clean-up" class="image-intro">
+        </div>
+
+        <br>
+        <br>
+        <div class="intro_section">
+          <div class="project-content">
+            <div class="group">
+              <h2>Team</h2>
+            </div>
+            <div class="project-description">
+              <p>Individual</p>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <div class="group">
+              <h2>Tools</h2>
+            </div>
+            <div class="project-description">
+              <p>Eclipse, Java, Sketchbook</p>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <div class="group">
+              <h2>Role</h2>
+            </div>
+            <div class="project-description">
+              <p>Designer/Developer, Audio Design, Animator</p>
+            </div>
+          </div>
+          
+          <div class="project-content">
+            <div class="group">
+              <h2>Category</h2>
+            </div>
+            <div class="project-description">
+              <p>Game Design</p>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <div class="group">
+              <h2>Context</h2>
+            </div>
+            <div class="project-description">
+              <p>4 weeks, Fall 2022, Academic Project</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="project-explanation">
+          <h2 id="overview">Overview</h2>
+          <div class="line"></div>
+          <br>
+          <p>
+            Gloomy Day Clean-Up is a simulation game that involves organizing a messy room based on instructions displayed on the screen. The goal is for players to complete the tasks assigned to them, resulting in a neat and organized room.
+          </p>
+
+          <h2 id="process">Process</h2>
+          <div class="line"></div>
+          <br>
+
+          <div class="project-content">
+            <div class="group">
+              <h2>Planning and Proposal</h2>
+            </div>
+            <div class="project-description">
+              <p>Initially, I planned a proposal of the concept explaining the project idea, user interaction, main process and a storyboard.</p>
+            </div>
+          </div>
+
+          <!--Add Image-->
+          <img src="images/process.jpg"  alt="map" class="process-img">
+          <div class="grid">
+            <p>Concept Proposal</p>
+          </div>
+
+          <div class="project-content">
+            <div class="group">
+              <h2>Drawings and Animation</h2>
+            </div>
+            <div class="project-description">
+              <p>To create the simulation, I used Sketchbook to draw each component while referring to internet images for color schemes. I designed various animations, including spiders moving and changing weather featuring moving rain and clouds.</p>
+            </div>
+          </div>
+          <!--Add Image-->
+          <img src="images/drawings.jpg"  alt="map" class="process-img">
+          <div class="grid">
+            <p>Drawings created in Sketchbook</p>
+          </div>
+          <div class="project-content">
+            <div class="group">
+              <h2>Development</h2>
+            </div>
+            <div class="project-description">
+              <p>Regarding the code, I used packages to organize it and created various states. I have a total of 19 states using the FSM model for the interactions, sounds  and various animations. I utilized perlin noise to create the dust object, the factory pattern to help instantiate objects and arraylists, and the decorator pattern to construct painting objects for GUI widget utilization.</p>
+            </div>
+          </div>
+
+          <!--Add Image-->
+          <img src="images/code.jpg"  alt="map" class="process-img">
+          <div class="grid">
+            <p>This is a sample code. It demonstrates the use of the factory pattern to initialize objects in Java</p>
+          </div>
+
+          <div class="project-content">
+            <div class="group">
+              <h2>Audio</h2>
+            </div>
+            <div class="project-description">
+              <p>The majority of the audio was recorded through my phone's voice memos app, while I also obtained additional sounds from external sources such as Fesilyan Studios.</p>
+            </div>
+          </div>
+
+          <!--Add Image-->
+          <img src="images/audio.jpg"  alt="map" class="process-img">
+          <div class="grid">
+            <p>Audio from Voice Memos Application</p>
+          </div>
+
+          <h2 id="challenges">Challenges</h2>
+          <div class="line"></div>
+          <br>
+          <div class="project-content">
+            <div class="group">
+              <h2>Issues</h2>
+            </div>
+            <div class="project-description">
+              <p>While working on the project, I faced issues with transitioning states as some of them were not functioning properly, and also encountered problems when implementing arraylists with the factory pattern.</p>
+            </div>
+          </div>
+          
+          <div class="project-content">
+            <div class="group">
+              <h2>Resolution</h2>
+            </div>
+            <div class="project-description">
+              <p>To overcome this issue, I carefully reviewed my code and identified small mistakes such as case-sensitivity in strings. For the factory pattern, I experimented with different versions of the code until I found a solution and noted down the reasons for my past unsuccessful attempts.</p>
+            </div>
+          </div>
+
+          <h2 id="reflection">Reflection</h2>
+          <div class="line"></div>
+          <br>
+          <div class="project-content">
+            <div class="group">
+              <h2>What I've Learned</h2>
+            </div>
+            <div class="project-description">
+              <p>By participating in this project, I gained knowledge about basic knowledge of Java programming language including concepts such as inheritance, pull-up operations and polymorphism.
+              </p>
+            </div>
+          </div>
+          
+          <div class="project-content">
+            <div class="group">
+              <h2>Areas of Improvement</h2>
+            </div>
+            <div class="project-description">
+              <p>Upon reflecting on the project, I wish to include more animations and interactions to make the gameplay longer and more enjoyable.</p>
+            </div>
+          </div>
+
+        </div>
+
+        
+      </div>
+    </div>
+  </section>
+
+  <div class="next">
+    <input  class = "enter" type="submit" value="< View Camping Microsite" onclick="location.href='project1.html';">
+  </div>
+
+
+  <div class="line"></div>
+  <footer class="site-footer">
+    <div class="container">
+    <div class="row">
+      <div class="align">
+        <div class="contact">
+            <p class="footer-text">Get in touch</p>
+            <p class="footer-email">jca463@sfu.ca</p>
+        </div>
+        <div class="style">
+          <a href="index.html">Style Guide</a>
+          <br>
+          <a href="citations.html">Citations</a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <p class="copyright">© 2023 Designed & Coded by Jenise Cheung</p>
+    </div>
+  </footer>
+</body>
