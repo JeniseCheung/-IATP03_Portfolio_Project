@@ -17,7 +17,7 @@ body {
 }
 
 section {
-  margin: 0rem 0; 
+  margin: 0rem; 
 }
 
 h1 {
@@ -223,7 +223,6 @@ code {
   width: 15%; 
   margin-left: 3rem;
   display: flex;
-  
   margin-top: 0rem;
   flex-direction: column;
   position: fixed;
@@ -238,7 +237,16 @@ code {
 
 .citations-right { 
   margin-top: 3rem;
-  margin-left: 25%;
+  margin-left: 17%;
+  border-left:1px solid #50A85E;
+}
+
+.citations-right h2 { 
+  margin-left: 1rem;
+}
+
+.citations-right p { 
+  margin-left: 1rem;
 }
 
 .rendered{
@@ -509,6 +517,7 @@ input[type="radio"]:checked {
 .starting-intro{
   justify-content: center;
   margin-right: 5rem;
+  margin-left: 2rem;
 }
 
 .image-intro{
@@ -524,14 +533,14 @@ input[type="radio"]:checked {
 }
 
 .project-content h2{
-  margin: 0rem;
+  margin: 1rem;
   font-weight:500;
   font-size: medium;
   font-style: normal;
 }
 
 .project-content p{
-  margin: 0rem;
+  margin: 1rem;
   font-weight:100;
   font-size: medium;
   font-style: normal;
@@ -683,6 +692,10 @@ input[type="radio"]:checked {
 
   .citations-right{
     margin-left:5% ;
+  }
+
+  .citations-right { 
+    border-left:none;
   }
 
   .nav-example ul{
