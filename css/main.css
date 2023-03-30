@@ -556,9 +556,26 @@ input[type="radio"]:checked {
   margin-right:auto;
 }
 
-.grid .process-img{
+.grid2 .process-img{
   width:100%;
 }
+
+.grid2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-right: 2rem;
+  padding: 20px; 
+}
+
+.grid2 p{
+  width:100%;
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+  color:#50A85E;
+  margin-top: -2.75rem;
+}
+
 
 .grid p{
   width:100%;
