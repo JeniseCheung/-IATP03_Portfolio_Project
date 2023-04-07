@@ -2,320 +2,472 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jenise Cheung - Style Guide</title>
 
   <link href="css/main.css" rel="stylesheet">
-
 </head>
 
 <body>
+  
   <header>
     <div class="topbanner">
       <div class="logo"><a href="home.html">Jenise Cheung</a></div>
-        <ul>
-            <li><a href="home.html" class="in-text-link">Home</a></li>
-            <li><a href="about.html" class="in-text-link">About</a></li>
-            <li><a href="#" class ="in-text-link">Resume</a></li>
-        </ul>
+        <nav>
+          <ul>
+              <li><a href="home.html" class="in-text-link">Home</a></li>
+              <li><a href="about.html" class="in-text-link">About</a></li>
+              <li><a href="#" class ="in-text-link">Resume↗</a></li>
+          </ul>
+        </nav>
     </div>
-    <div class="line"></div>
   </header>
 
+  <!--Top Navigation-->
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler" id="toggle">
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="home.html" class="in-text-link">Home</a></li>
+            <li><a href="about.html" class="in-text-link">About</a></li>
+            <li><a href="#" class ="in-text-link">Resume↗</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
   
+  <section class="hamburger">
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler first-button animated-icon1" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#toggle" aria-controls="navbarToggleExternalContent9"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent9">
+    </div>
+  </section>
+  <!--End of Top Navigation-->
+
   <section class="index">
     <div class="index-box">
+      <!--Bottom Navigation-->
       <div class="index-left">
         <h2>Basic Styles</h2>
-        <a href="#colours" class ="in-text-link">Colour Palette</a>
-        <a href="#fonts" class ="in-text-link">Typefaces</a>
-
+        <a href="#colours" class="in-text-link">Colour Palette</a>
+        <a href="#fonts" class="in-text-link">Typefaces</a>
+      
         <h2>Code Structure</h2>
-        <a href="#items" class ="in-text-link">Interactive Items</a>
-        <a href="#texts" class ="in-text-link">Text Elements</a>
-        <a href="#elements" class ="in-text-link">Combined Elements</a>
+        <a href="#items" class="in-text-link">Interactive Items</a>
+        <a href="#texts" class="in-text-link">Text Elements</a>
+        <a href="#elements" class="in-text-link">Combined Elements</a>
       </div>
+
+      
+      <div class="mobile-bottom-nav">
+        <div class="mobile-bottom-nav__item">
+          <a href="#colours" class="mobile-bottom-nav__item-content">Colour Palette</a>		
+        </div>
+
+        <div class="mobile-bottom-nav__item">
+          <a href="#fonts" class="mobile-bottom-nav__item-content">Typeface</a>		
+        </div>
+        
+        <div class="mobile-bottom-nav__item">
+          <a href="#items" class="mobile-bottom-nav__item">Interactive Items</a>
+        </div>
+      
+        <div class="mobile-bottom-nav__item">
+          <a href="#texts" class="mobile-bottom-nav__item">Text Elements</a>
+        </div>
+      
+        <div class="mobile-bottom-nav__item">
+          <a href="#elements" class="mobile-bottom-nav__item">Combined Elements</a>
+        </div>
+      </div>
+
+      <!--Bottom Navigation-->
 
       <div class="citations-right">
         <h1 class="title">Style Guide</h1>
-
-        <h2 id="colours">Colour Palette</h2>
-        <div class="border"></div>
-        <div class = "image-container">
-          <div class="column">
-            <div class="colour-box" id="black"></div>
-            <p>#000000 – Black</p>
-            <p>&ensp;• &ensp;used for the main headings and paragraphs.</p>
-          </div>
-    
-
-          <div class="column">
-            <div class="colour-box" id="grass"></div>
-            <p>#50A85E – Grass Green </p>
-            <p>&ensp;• &ensp;used to highlight the item that is being hovered over and borders.</p>
-          </div>
-
-          <div class="column">
-            <div class="colour-box" id="pastel_green"></div>
-            <p>#9FDCA9 – Pastel Green </p>
-            <p>&ensp;• &ensp;used for the buttons.</p>
-          </div>
-
-          <div class="column">
-            <div class="colour-box" id="yellow"></div>
-            <p>#FFFAD1 – Pastel Yellow</p>
-            &ensp;• &ensp;used for the header and footer background.
-          </div>
-
-          <div class="column">
-            <div class="colour-box" id="white"></div>
-            <p>#ffffff – White</p>
-            &ensp;• &ensp;used for the background of the page because it provides brightness and adds vibrancy to the design.
-          </div>
-        </div>
-
-        <h2 id="fonts">Typefaces</h2>
-        <div class="border"></div>
-        <div class="font">
-          <p>&ensp;• &ensp;The main font is Lato by Łukasz Dziedzic. Lato not only exudes a friendly and inviting aura, but also conveys a sense of professionalism.</p>
-        </div>
-
-        <h2 id="items">Interactive Items</h2>
-        <div class="border"></div>
-        <section class="element">
-          <h3>In-text link</h3>
-          <h4>CSS selector:</h4>
-          <p>.in-text-link</p>
-
-          <h4>Sample code:</h4>
-          <code>&lt;a href="#"&gt;Click here to visit our website!&lt;/a&gt;</code>
-
-          <h4 class="rendered">Rendered element:</h4>
-          <a href="home.html" class ="in-text-link">Click here to visit my portfolio!</a>
-
-        </section>
-
-        <div class="line"></div>
-
-        <section class="element">
-
-          <h3>Navigation Link</h3>
-
-          <h4>CSS selector:</h4>
-          <p>.button-nav</p>
-
-          <h4>Sample code:</h4>
-          <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
-
-          <h4 class="rendered">Rendered element:</h4>
-          <div class="nav-example">
-            <a href="#" class="button-nav">Default button</a>
-          </div>
-
-        </section>
-
-        <div class="line"></div>
-
-        <section class="element">
-          <h3>Submit/Reset Buttons</h3>
-          <h4>CSS selector:</h4>
-          <p>.enter</p>
-          <h4>Sample code:</h4>
-          <code>&lt;input class="enter" type="submit" value="Submit"&gt;</code>
-          <code>&lt;input class="enter" type="reset" value="reset"&gt;</code>
-          <h4 class="rendered">Rendered element:</h4>
-
-          <input  class = "enter" type="submit" value="Submit">
-          <input  class = "enter" type="submit" value="Reset">
-        </section>
-
-        <div class="line"></div>
-        
-        <section class="element">
-          <h3>Text Input Field with Label</h3>
-          <h4>CSS selector:</h4>
-          <p>input</p>
-          <h4>Sample code:</h4>
-          <code>&lt;form&gt;</code>
-          <code>&lt;fieldset&gt;</code>
-          <code>&lt;label for="fname">First name:&lt;/label&gt;</code>
-          <code>&lt;input type="text" id="fname" name="fname"&gt;</code>
-          <code>&lt;/fieldset&gt;</code>
-          <code>&lt;/form&gt;</code>
-          <h4>Rendered element:</h4>
-          <form>
-              <fieldset>
-              <label for="fname">First name:</label>
-              <input type="text" id="fname" name="fname"><br><br>
-              <label for="lname">Last name:</label>
-              <input type="text" id="lname" name="lname"><br><br>
-            </fieldset>
-          </form>
-        </section>
-
-        <div class="line"></div>
-
-        <section class="element">
-          <h3>Radio Button with Label</h3>
-          <h4>CSS selector:</h4>
-          <p></p>
-          <h4>Sample code:</h4>
-          <code>&lt;input type="radio" id="small" name="cloth_size" value="SMALL"&gt;</code>
-          <code>&lt;label for="small">SMALL&lt;/label&gt;</code>
-          
-          <h4>Rendered element:</h4>
-          <p>How's the weather today?</p>
-          <form>
-            <input type="radio" id="bright" name="weather" value="Bright">
-            <label for="bright">Bright</label><br>
-            <input type="radio" id="cloudy" name="weather" value="Cloudy">
-            <label for="cloudy">Cloudy</label><br>
-            <input type="radio" id="rainy" name="weather" value="Rainy">
-            <label for="rainy">Rainy</label><br>
-          </form>
-        </section>
-        
-        <div class="line"></div>
-
-        <!-- knowledge here is from w3cschool website -->
-        <section class="element">
-          <h3>Image as a Link</h3>
-          <h4>CSS selector:</h4>
-          <p>.linked-img</p>
-          <h4>Sample code:</h4>
-          <code>&lt;a href="#"&gt;&lt;img src="#" alt="example"&gt;</code>
-
-          <h4>Rendered element:</h4>
-          <p>The image below is a link. Try to click on it.</p>
-
-          <a href="home.html">
-            <div class = "overlay-container">
-              <img src="images/room.jpg"  alt="Gloomy room" class="linked-img">
-            </div>
-          </a>
-        </section>
-
-        <section id="text_elements">
-          <h2 id="texts">Text Elements </h2>
+        <div class="right-side">
+          <h2 id="colours">Colour Palette</h2>
           <div class="border"></div>
-  
-          <section class="element">
-            <h3>Headings</h3>
-            <h4>Sample code:</h4>
-            <code>&lt;h3&gt;Headings&lt;/h3&gt;</code>
-            <h4>Rendered element:</h4>
-            <h1>Heading1</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
-          </section>
+          <div class = "image-container">
+            <div class="column">
+              <div class="colour-box" id="black"></div>
+              <p>#000000 <br> Black</p>
+              <p class="note">Used for the main headings and paragraphs.</p>
+            </div>
 
-          <div class="line"></div>
+            <div class="column">
+              <div class="colour-box" id="brown"></div>
+              <p>#D4A373 <br> brown</p>
+              <p class="note">used for buttons.</p>
+            </div>
 
-          <section class="element">
-            <h3>Paragraphs</h3>
-            <h4>Sample code:</h4>
-            <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
-            <h4>Rendered element:</h4>
-            <p>This is a paragraph.</p>
-          </section>
-  
-          <div class="line"></div>
+            <div class="column">
+              <div class="colour-box" id="grass"></div>
+              <p>#50A85E <br> Grass Green </p>
+              <p class="note">Used to highlight the item that is being hovered over and borders.</p>
+            </div>
 
+            <div class="column">
+              <div class="colour-box" id="yellow_green"></div>
+              <p>#9FDCA9 <br> Yellow Green </p>
+              <p class="note">Used for the buttons.</p>
+            </div>
+
+            <div class="column">
+              <div class="colour-box" id="moss"></div>
+              <p>#FFFAD1 <br> Moss Green</p>
+              <p class="note">Used for footer background.</p>
+            </div>
+
+            <div class="column">
+              <div class="colour-box" id="cream"></div>
+              <p>#FFFAF0 <br> Cream</p>
+              <p class="note">used for the background of the page because it provides brightness and adds vibrancy to the design.</p>
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <br>
+
+          <h2 id="fonts">Typefaces</h2>
+          <div class="border"></div>
+          <div class="font">
+            <p>The main font is Lato by Łukasz Dziedzic. Lato not only exudes a friendly and inviting aura, but also conveys a sense of professionalism.</p>
+          </div>
+          
+          <br>
+          <br>
+          <br>
+
+          <h2 id="items">Interactive Items</h2>
+          <div class="border"></div>
           <section class="element">
-            <h3>Numbered Lists</h3>
-            <h4>CSS selector:</h4>
-            <p></p>
-            <h4>Sample code:</h4>
-            <code>&lt;li&gt;Item 1&lt;/li&gt;</code>
-            <h4>Rendered element:</h4>
-            <ol>
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-            </ol>  
-          </section>
-          <!-- COMBINED ELEMENTS SECTION // -->
-          <section id="combined_elements">    
-            <h2 id="elements">Combined Elements</h2>
-            <div class="border"></div>
-    
-            <section class="element">
-              <h3>Main Navigation</h3>
-              <h4>Rendered element:</h4>
-              <div class="topbanner">
-                <div class="logo"><a class="active" href="home.html">Jenise Cheung</a></div>
-                  <ul>
-                      <li><a href="home.html" class="in-text-link">Home</a></li>
-                      <li><a href="about.html" class="in-text-link">About</a></li>
-                      <li><a href="#" class ="in-text-link">Resume</a></li>
-                  </ul>
+            <h3>In-text link</h3>
+            <div class="index-content">
+              <div class="index-group">
+                <h4>CSS selector:</h4>
               </div>
-              
-            </section>
+              <div class="index-description">
+                <p>.in-text-link</p>
+              </div>
 
-            <div class="line"></div>
+              <div class="index-group">
+                <h4>Sample code:</h4>
+              </div>
+              <div class="index-description">
+                <code>&lt;a href="#"&gt;Click here to visit our website!&lt;/a&gt;</code>
+              </div>
 
-            <section class="element">
-              <h3>Project Layout</h3>
-              <h4>Rendered element:</h4>
-              <h2 id="uiux">UI/UX</h2>
-              <div class="line"></div>
-              <div class = "content">
-                <div class="project-img">
-                  <a href="project1.html">
-                    <div class = "overlay-container">
-                      <img src="images/site.jpg"  alt="Site" class="linked-img">
-                    </div>
-                  </a>
-                </div>
-                <div class="text">
-                  <h3>UI/UX | FRONT END</h3>
-                  <h1>Adventure Awaits Camping Microsite</h1>
-                  <p class="description">Adventure Awaits is a blog dedicated to family travel, particularly outdoor education and tourism. The goal is to construct a standalone website that serves a specific purpose.</p>
-                  <br>
-                  <br>
-                  <input class="enter" type="submit" value="View Project" onclick="location.href='project1.html';">
+              <div class="index-group">
+                <h4 class="rendered">Rendered element:</h4>
+              </div>
+              <div class="index-description">
+                <a href="home.html" class ="in-text-link">Click here to visit my portfolio!</a>
+              </div>
+              <br>
+            </div>
+          </section>
+
+          <section class="element">
+            <h3>Navigation Link</h3>
+            <div class="index-content">
+              <div class="index-group">
+                <h4>CSS selector:</h4>
+              </div>
+              <div class="index-description">
+                <p>.button-nav</p>
+              </div>
+
+              <div class="index-group">
+                <h4>Sample code:</h4>
+              </div>
+
+              <div class="index-description">
+                <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+              </div>
+              <div class="index-group">
+                <h4 class="rendered">Rendered element:</h4>
+              </div>
+              <div class="index-description">
+                <div class="nav-example">
+                  <a href="#" class="button-nav">Default button</a>
                 </div>
               </div>
               <br>
+            </div>
+          </section>
+
+          <section class="element">
+            <h3>Submit/Reset Buttons</h3>
+            <div class="index-content">
+              <div class="index-group">
+                <h4>CSS selector:</h4>
+              </div>
+
+              <div class="index-description">
+                <p>.enter</p>
+              </div>
+
+              <div class="index-group">
+                <h4>Sample code:</h4>
+              </div>
+
+              <div class="index-description">
+                <code>&lt;input class="enter" type="submit" value="Submit"&gt;</code>
+                <code>&lt;input class="enter" type="reset" value="reset"&gt;</code>
+              </div>
+
+              <div class="index-group">
+                <h4 class="rendered">Rendered element:</h4>
+              </div>
+
+              <div class="index-description">
+                <input class = "enter" type="submit" value="Submit">
+                <input class = "enter" type="submit" value="Reset">
+              </div>
+              <br>
+            </div>
+          </section>
+
+          <section class="element">
+            <h3>Image as a Link</h3>
+            <div class="index-content">
+              <div class="index-group">
+                <h4>CSS selector:</h4>
+              </div>
+
+              <div class="index-description">
+                <p>.linked-img</p>
+              </div>
+
+              <div class="index-group">
+                <h4>Sample code:</h4>
+              </div>
+
+              <div class="index-description">
+                <code>&lt;a href="#"&gt;&lt;img src="#" alt="example"&gt;</code>
+              </div>
+
+              <div class="index-group">
+                <h4>Rendered element:</h4>
+              </div>
+
+              <div class="index-description">
+                <p>The image below is a link. Try to click on it.</p>
+                <a href="home.html">
+                  <div class = "overlay-container">
+                    <img src="images/room.jpg"  alt="Gloomy room" class="linked-img">
+                  </div>
+                </a>
+              </div>
+              <br>
+            </div>
+          </section>
+
+          <br>
+          <br>
+          <br>
+
+          <section id="text_elements">
+            <h2 id="texts">Text Elements </h2>
+            <div class="border"></div>
+    
+            <section class="element">
+              <h3>Headings</h3>
+              <div class="index-content">
+                <div class="index-group">
+                  <h4>CSS selector:</h4>
+                </div>
+  
+                <div class="index-description">
+                  <p>h1<br>h2<br>h3<br>h4<br>h5<br>h6</p>
+                </div>
+
+                <div class="index-group">
+                  <h4>Sample code:</h4>
+                </div>
+
+                <div class="index-description">
+                  <code>&lt;h3&gt;Headings&lt;/h3&gt;</code>
+                </div>
+
+                <div class="index-group">
+                  <h4>Rendered element:</h4>
+                </div>
+
+                <div class="index-description">
+                  <h1>Heading1</h1>
+                  <h2>Heading 2</h2>
+                  <h3 class="normal">Heading 3</h3>
+                  <h4>Heading 4</h4>
+                  <h5>Heading 5</h5>
+                  <h6>Heading 6</h6>
+                </div>
+                <br>
+              </div>
             </section>
 
-            <div class="line"></div>
+            <section class="element">
+              <h3>Paragraphs</h3>
+
+              <div class="index-content">
+                <div class="index-group">
+                  <h4>CSS selector:</h4>
+                </div>
+  
+                <div class="index-description">
+                  <p>p</p>
+                </div>
+
+                <div class="index-group">
+                  <h4>Sample code:</h4>
+                </div>
+
+                <div class="index-description">
+                  <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+                </div>
+
+                <div class="index-group">
+                  <h4>Rendered element:</h4>
+                </div>
+
+                <div class="index-description">
+                  <p>This is a paragraph.</p>
+                </div>
+                <br>
+              </div>
+            </section>
 
             <section class="element">
-              <h3>Footer</h3>
-              <h4>Rendered element:</h4>
-              <footer class="site-footer">
-                <div class="container">
-                <div class="row">
-                  <div class="align">
-                    <div class="contact">
-                        <p class="footer-text">Get in touch</p>
-                        <p class="footer-email">jca463@sfu.ca</p>
+              <h3>Numbered Lists</h3>
+              
+              <div class="index-content">
+                <div class="index-group">
+                  <h4>CSS selector:</h4>
+                </div>
+
+                <div class="index-description">
+                  <p>li</p>
+                </div>
+
+                <div class="index-group">
+                  <h4>Sample code:</h4>
+                </div>
+
+                <div class="index-description">
+                  <code>&lt;li&gt;Item 1&lt;/li&gt;</code>
+                </div>
+
+                <div class="index-group">
+                  <h4>Rendered element:</h4>
+                </div>
+
+                <div class="index-description">
+                  <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                  </ol>
+                </div> 
+                <br>
+              </div>
+            </section>
+            
+            <!-- COMBINED ELEMENTS SECTION // -->
+
+            <br>
+            <br>
+            <br>
+            <section id="combined_elements">    
+              <h2 id="elements">Combined Elements</h2>
+              <div class="border"></div>
+      
+              <section class="element">
+                <h3>Main Navigation</h3>
+                <div class="index-combined">
+                  <h4>Rendered element:</h4>
+                  <div class="topbanner">
+                    <div class="logo"><a href="home.html">Jenise Cheung</a></div>
+                      <ul>
+                          <li><a href="home.html" class="in-text-link">Home</a></li>
+                          <li><a href="about.html" class="in-text-link">About</a></li>
+                          <li><a href="#" class ="in-text-link">Resume</a></li>
+                      </ul>
+                  </div>
+                  <br>
+                </div>
+                
+              </section>
+
+              <section class="element">
+                <h3>Project Layout</h3>
+                <div class="index-combined">
+                  <h4>Rendered element:</h4>
+                  <h2 class="left" id="uiux">UI/UX</h2>
+                  <div class="line"></div>
+                  <div class = "content">
+                    <div class="project-img">
+                      <a href="project1.html">
+                        <div class = "overlay-container">
+                          <img src="images/site.jpg"  alt="Site" class="linked-img">
+                        </div>
+                      </a>
                     </div>
-                    <div class="style">
-                      <a href="index.html">Style Guide</a>
-                      <br>
-                      <a href="citations.html">Citations</a>
+                    <div class="text">
+                      <h3>UI/UX | FRONT END</h3>
+                      <h1>Adventure Awaits Camping Microsite</h1>
+                      <p class="description">Adventure Awaits is a blog dedicated to family travel, particularly outdoor education and tourism. The goal is to construct a standalone website that serves a specific purpose.</p>
+                      <input class="enter" type="submit" value="View Project" onclick="location.href='project1.html';">
                     </div>
                   </div>
                   <br>
-                  <br>
-                  <p class="copyright">© 2023 Designed & Coded by Jenise Cheung</p>
                 </div>
-              </footer>
+              </section>
+
+              <section class="element">
+                <h3>Footer</h3>
+                <div class="index-combined">
+                  <h4>Rendered element:</h4>
+                  <footer class="site-footer">
+                    <div class="row">
+                      <div class="align">
+                        <div class="contact">
+                            <p class="footer-text">Get in touch</p>
+                            <p class="footer-email">jca463@sfu.ca</p>
+                        </div>
+                        <div class="style">
+                          <a href="index.html">Style Guide</a>
+                          <br>
+                          <a href="citations.html">Citations</a>
+                        </div>
+                      </div>
+                      <br>
+                      <br>
+                      <p class="copyright">© 2023 Designed & Coded by Jenise Cheung</p>
+                    </div>      
+                  </footer>
+                <br>
+                </div>
+              </section>
               
             </section>
-            
+            <!-- // COMBINED ELEMENTS SECTION -->
           </section>
-          <!-- // COMBINED ELEMENTS SECTION -->
-        </section>
-
+          <br>
+          <br>      
+        </div>
 
       </div>
     </div>
@@ -323,7 +475,6 @@
 
   <div class="line"></div>
   <footer class="site-footer">
-    <div class="container">
     <div class="row">
       <div class="align">
         <div class="contact">
@@ -341,5 +492,8 @@
       <p class="copyright">© 2023 Designed & Coded by Jenise Cheung</p>
     </div>
   </footer>
+
+  <script src="js/hamburger.js"></script>
+  <script src="js/bottom-nav.js"></script>
 
 </body>
