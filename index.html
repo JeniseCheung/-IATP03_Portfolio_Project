@@ -4,9 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jenise Cheung - Style Guide</title>
+  <title> Style Guide</title>
 
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -16,9 +19,8 @@
       <div class="logo"><a href="home.html">Jenise Cheung</a></div>
         <nav>
           <ul>
-              <li><a href="home.html" class="in-text-link">Home</a></li>
-              <li><a href="about.html" class="in-text-link">About</a></li>
-              <li><a href="#" class ="in-text-link">Resume↗</a></li>
+              <li><a href="home.html" class="button-nav">Home</a></li>
+              <li><a href="about.html" class="button-nav">About</a></li>
           </ul>
         </nav>
     </div>
@@ -33,7 +35,6 @@
           <ul>
             <li><a href="home.html" class="in-text-link">Home</a></li>
             <li><a href="about.html" class="in-text-link">About</a></li>
-            <li><a href="#" class ="in-text-link">Resume↗</a></li>
           </ul>
         </div>
       </div>
@@ -41,7 +42,7 @@
   </div>
   
   <section class="hamburger">
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar">
       <div class="container-fluid">
         <button class="navbar-toggler first-button animated-icon1" type="button" data-mdb-toggle="collapse"
           data-mdb-target="#toggle" aria-controls="navbarToggleExternalContent9"
@@ -54,6 +55,11 @@
     </div>
   </section>
   <!--End of Top Navigation-->
+
+  <!--Back to top navigation-->
+  <div class="top-button"></div>
+
+  <!--End of back to top navigation-->
 
   <section class="index">
     <div class="index-box">
@@ -69,26 +75,48 @@
         <a href="#elements" class="in-text-link">Combined Elements</a>
       </div>
 
-      
-      <div class="mobile-bottom-nav">
-        <div class="mobile-bottom-nav__item">
-          <a href="#colours" class="mobile-bottom-nav__item-content">Colour Palette</a>		
-        </div>
+  
 
-        <div class="mobile-bottom-nav__item">
-          <a href="#fonts" class="mobile-bottom-nav__item-content">Typeface</a>		
-        </div>
+      <div class="mobile-bottom-nav">
+        <input type="checkbox">
+
+        <section class="arrow">
+          <nav class="navbar">
+              <button class="navbar-toggler first-button animated-icon2" type="button"></button>
+          </nav>
+        </section>
+ 
+     
+        <div class="bottom-menu">
+          <div class="mobile-bottom-nav__item">
+            <a href="#colours" class="mobile-bottom-nav__item-content">Colour Palette</a>		
+          </div>
+
+          <div class="mobile-bottom-nav__item">
+            <a href="#fonts" class="mobile-bottom-nav__item-content">Typeface</a>		
+          </div>
+
+          <div class="mobile-bottom-nav__item">
+            <a href="#items" class="mobile-bottom-nav__item-content">Interactive Items</a>		
+          </div>
         
-        <div class="mobile-bottom-nav__item">
-          <a href="#items" class="mobile-bottom-nav__item">Interactive Items</a>
-        </div>
-      
-        <div class="mobile-bottom-nav__item">
-          <a href="#texts" class="mobile-bottom-nav__item">Text Elements</a>
-        </div>
-      
-        <div class="mobile-bottom-nav__item">
-          <a href="#elements" class="mobile-bottom-nav__item">Combined Elements</a>
+          <div class="mobile-bottom-nav__item">
+            <a href="#texts" class="mobile-bottom-nav__item-content">Text Elements</a>
+          </div>
+        
+          <div class="mobile-bottom-nav__item">
+            <a href="#elements" class="mobile-bottom-nav__item-content">Combined Elements</a>
+          </div>
+
+          <div class="mobile-bottom-nav__item">
+          </div>
+          <div class="mobile-bottom-nav__item">
+          </div>
+          <div class="mobile-bottom-nav__item">
+          </div>
+
+          <div class="mobile-bottom-nav__item">
+          </div>
         </div>
       </div>
 
@@ -236,6 +264,70 @@
               <div class="index-description">
                 <input class = "enter" type="submit" value="Submit">
                 <input class = "enter" type="submit" value="Reset">
+              </div>
+              <br>
+            </div>
+          </section>
+
+          <section class="element">
+            <h3>Back-to-top button</h3>
+            <div class="index-content">
+              <div class="index-group">
+                <h4>CSS selector:</h4>
+              </div>
+
+              <div class="index-description">
+                <p>.top-button</p>
+              </div>
+
+              <div class="index-group">
+                <h4>Sample code:</h4>
+              </div>
+
+              <div class="index-description">
+                <code>&lt;div class="top-button-2"&gt;&lt;/div"&gt;</code>
+              </div>
+
+              <div class="index-group">
+                <h4 class="rendered">Rendered element:</h4>
+              </div>
+
+              <div class="index-description">
+                <div class="top-button-2"></div>
+              </div>
+              <br>
+            </div>
+          </section>
+
+          <section class="element">
+            <h3>Bottom Navigation button</h3>
+            <div class="index-content">
+              <div class="index-group">
+                <h4>CSS selector:</h4>
+              </div>
+
+              <div class="index-description">
+                <p>.arrow</p>
+              </div>
+
+              <div class="index-group">
+                <h4>Sample code:</h4>
+              </div>
+
+              <div class="index-description">
+                <code>&lt;div class="top-button-2"&gt;&lt;/div"&gt;</code>
+              </div>
+
+              <div class="index-group">
+                <h4 class="rendered">Rendered element:</h4>
+              </div>
+
+              <div class="index-description">
+                <section class="arrow-3">
+                  <nav class="navbar">
+                      <button class="navbar-toggler first-button animated-icon2" type="button"></button>
+                  </nav>
+                </section>
               </div>
               <br>
             </div>
@@ -396,17 +488,107 @@
       
               <section class="element">
                 <h3>Main Navigation</h3>
-                <div class="index-combined">
-                  <h4>Rendered element:</h4>
-                  <div class="topbanner">
+                <div class="index-combined-2">
+                  <div class="index-group">
+                    <h4>Sample code:</h4>
+                  </div>
+
+                  <div class="index-description">
+                    <code>&lt;ul&gt;</code>
+                    <code>&lt;div class="logo"&gt;&lt;a href="home.html"&gt;Jenise Cheung&lt;/a&gt;&lt;/div&gt;</code>
+                    <code>&lt;li&gt;&lt;a href="home.html" class="button-nav"&gt;Home&lt;/a&gt;&lt;/li&gt;</code>
+                    <code>&lt;li&gt;&lt;href="about.html" class="button-nav"&gt;About&lt;/a&gt;&lt;/li&gt;</code>
+                    <code>&lt;/ul&gt;</code>
+                  </div>
+
+                  <h4>Desktop rendered element:</h4>
+                  <div class="topbanner2">
                     <div class="logo"><a href="home.html">Jenise Cheung</a></div>
                       <ul>
-                          <li><a href="home.html" class="in-text-link">Home</a></li>
-                          <li><a href="about.html" class="in-text-link">About</a></li>
-                          <li><a href="#" class ="in-text-link">Resume</a></li>
+                          <li><a href="home.html" class="button-nav">Home</a></li>
+                          <li><a href="about.html" class="button-nav">About</a></li>
                       </ul>
                   </div>
                   <br>
+                  <h4>Mobile rendered element:</h4>
+                      <!--Top Navigation-->
+                    <div class="menu-wrap-2">
+                      <input type="checkbox" class="toggler" id="toggle-2">
+                      <div class="menu">
+                        <div>
+                          <div>
+                            <ul>
+                              <li><a href="home.html" class="in-text-link">Home</a></li>
+                              <li><a href="about.html" class="in-text-link">About</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <section class="hamburger-2">
+                      <nav class="navbar">
+                        <div class="container-fluid">
+                          <button class="navbar-toggler first-button animated-icon1-2" type="button" data-mdb-toggle="collapse"
+                            data-mdb-target="#toggle-2" aria-controls="navbarToggleExternalContent9"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span><span></span><span></span>
+                          </button>
+                        </div>
+                      </nav>
+                      <div class="collapse" id="navbarToggleExternalContent9-2">
+                      </div>
+                    </section>
+                    <!--End of Top Navigation-->
+                </div>
+                
+              </section>
+
+              <section class="element">
+                <h3>Side/ Bottom Navigation</h3>
+                <div class="index-combined-2">
+                  <div class="index-group">
+                    <h4>Sample code:</h4>
+                  </div>
+
+                  <div class="index-description">
+                    <code>&lt;h2&gt;Projects&lt;/h2&gt;</code>
+                    <code>&lt;a href="ui/ux" class="in-text=link"&gt;UI/UX&lt;/a&gt;</code>
+                    <code>&lt;a href="game" class="in-text=link"&gt;Game Design&lt;/a&gt;</code>
+                  </div>
+
+                  <h4>Desktop rendered element:</h4>
+                  <div class="index-left-2">
+                    <h2>Projects</h2>
+                    <a href="" class ="in-text-link">UI/UX</a>
+                    <a href="" class ="in-text-link">Game Design</a>
+                  </div>
+                  <br>
+                  <h4>Mobile rendered element:</h4>
+                  <div class="mobile-bottom-nav-2">
+                    <input type="checkbox">
+                    
+                    <section class="arrow-2">
+                      <nav class="navbar">
+                          <button class="navbar-toggler first-button animated-icon2" type="button"></button>
+                      </nav>
+                    </section>
+             
+                    <div class="bottom-menu-2">
+                      <div class="mobile-bottom-nav-2__item">
+                        <a href="#uiux" class="mobile-bottom-nav-2__item-content">UI/UX</a>   
+                      </div>
+            
+                      <div class="mobile-bottom-nav-2__item">
+                        <a href="#game" class="mobile-bottom-nav-2__item-content">Game Design</a>   
+                      </div>
+
+                      <div class="mobile-bottom-nav-2__item">
+                      </div>
+     
+                      
+                    </div>
+                  </div>
                 </div>
                 
               </section>
@@ -414,6 +596,20 @@
               <section class="element">
                 <h3>Project Layout</h3>
                 <div class="index-combined">
+                  <div class="index-group">
+                    <h4>Sample code:</h4>
+                  </div>
+
+                  <div class="index-description">
+                    <code>&lt;h3&gt;YI/UX | FRONT END&lt;/h3&gt;</code>
+                    <code>&lt;class="line"&gt;&lt;/div&gt;</code>
+                    <code>&lt;h1&gt;Adventure Awaits Camping Microsite&lt;/h1&gt;</code>
+                    <code>&lt;a href="ui/ux" class="in-text=link"&gt;UI/UX&lt;/a&gt;</code>
+                    <code>&lt;a href="game" class="in-text=link"&gt;Game Design&lt;/a&gt;</code>
+                    <code>&lt;p class="description"&gt;Adventure Awaits is a blog dedicated to family travel, particularly outdoor education and tourism. The goal is to construct a standalone website that serves a specific purpose.&lt;/p&gt;</code>
+                    <code>&lt;input class="enter" type="submit" value="View Project" onclick="location.href='project1.html';&gt;&lt;/p&gt;</code>
+                  </div>
+
                   <h4>Rendered element:</h4>
                   <h2 class="left" id="uiux">UI/UX</h2>
                   <div class="line"></div>
@@ -421,7 +617,7 @@
                     <div class="project-img">
                       <a href="project1.html">
                         <div class = "overlay-container">
-                          <img src="images/site.jpg"  alt="Site" class="linked-img">
+                          <img src="images/site.png"  alt="Site" class="linked-img">
                         </div>
                       </a>
                     </div>
@@ -439,13 +635,21 @@
               <section class="element">
                 <h3>Footer</h3>
                 <div class="index-combined">
+                  <div class="index-group">
+                    <h4>Sample code:</h4>
+                  </div>
+
+                  <div class="index-description">
+                    <code>&lt;p class="footer-text"&gt;Get in touch&lt;p&gt;</code>
+                    <code>&lt;p class="footer-text"&gt;jenise_c@hotmail.com&lt;p&gt;</code>
+                  </div>
                   <h4>Rendered element:</h4>
                   <footer class="site-footer">
                     <div class="row">
                       <div class="align">
                         <div class="contact">
                             <p class="footer-text">Get in touch</p>
-                            <p class="footer-email">jca463@sfu.ca</p>
+                            <p class="footer-email">jenise_c@hotmail.ca</p>
                         </div>
                         <div class="style">
                           <a href="index.html">Style Guide</a>
@@ -458,7 +662,7 @@
                       <p class="copyright">© 2023 Designed & Coded by Jenise Cheung</p>
                     </div>      
                   </footer>
-                <br>
+                  <br>
                 </div>
               </section>
               
@@ -479,7 +683,7 @@
       <div class="align">
         <div class="contact">
             <p class="footer-text">Get in touch</p>
-            <p class="footer-email">jca463@sfu.ca</p>
+            <p class="footer-email">jenise_c@hotmail.ca</p>
         </div>
         <div class="style">
           <a href="index.html">Style Guide</a>
@@ -492,8 +696,6 @@
       <p class="copyright">© 2023 Designed & Coded by Jenise Cheung</p>
     </div>
   </footer>
-
-  <script src="js/hamburger.js"></script>
-  <script src="js/bottom-nav.js"></script>
+  <script src="js/main.js"></script>
 
 </body>

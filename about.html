@@ -8,6 +8,7 @@
   <title>Jenise Cheung - About</title>
 
   <link href="css/main.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 
@@ -16,40 +17,80 @@
     <div class="topbanner">
       <div class="logo"><a href="home.html">Jenise Cheung</a></div>
         <ul>
-            <li><a href="home.html" class="in-text-link">Home</a></li>
-            <li><a href="about.html" class="in-text-link">About</a></li>
-            <li><a href="#" class ="in-text-link">Resume</a></li>
+            <li><a href="home.html" class="button-nav">Home</a></li>
+            <li><a href="about.html" class="button-nav">About</a></li>
         </ul>
     </div>
   </header>
 
-  <section class="index">
-        <div class ="about-content">
-          <div class="me-img">
-            <img src="images/me.jpg"  alt="example" class="example">
+    <!--Top Navigation-->
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler" id="toggle">
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="home.html" class="in-text-link">Home</a></li>
+              <li><a href="about.html" class="in-text-link">About</a></li>
+            </ul>
           </div>
-          <div class="right">
-            <div class="text">
-              <h1>Hi!</h1>
-              <br> <br> <br>
-              <p>I'm Jenise Cheung and I’m from Vancouver, pursuing Interactive Arts and Technology with a focus on interactive systems at Simon Fraser University. I’m also planning to apply for the design concentration. I have experience in prototyping with Figma, and coding with Java and HTML. I'm constantly seeking to expand my knowledge and skills in web and game design. Currently, I'm expanding my proficiency in user research and my communication skills to collaborate with stakeholders and convey design decisions. My goal is to create visually stunning and user-friendly digital environments and develop immersive games.</p>
-              <br>
-              <p>I am currently seeking for coop positions.</p>
-            </div>
         </div>
+      </div>
+    </div>
+    
+    <section class="hamburger">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <button class="navbar-toggler first-button animated-icon1" type="button" data-mdb-toggle="collapse"
+            data-mdb-target="#toggle" aria-controls="navbarToggleExternalContent9"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+      <div class="collapse" id="navbarToggleExternalContent9">
+      </div>
+    </section>
+    <!--End of Top Navigation-->
+  
+    <!--Back to top navigation-->
+    <div class="top-button"></div>
+    <!--End of back to top navigation-->
+
+  <section class="index">
+      <div class ="about-content">
+        <div class="me-img">
+          <img src="images/me.jpg"  alt="example" class="example">
+        </div>
+        <div class="right2">
+          <div class="text">
+            <h1>Hi!</h1>
+            <br> <br> <br>
+            <p>I'm Jenise Cheung and I’m from Vancouver, pursuing Interactive Arts and Technology with a focus on interactive systems at Simon Fraser University. I’m also planning to apply for the design concentration. I have experience in prototyping with Figma, and coding with Java and HTML. I'm constantly seeking to expand my knowledge and skills in web and game design. Currently, I'm expanding my proficiency in user research and my communication skills to collaborate with stakeholders and convey design decisions. My goal is to create visually stunning and user-friendly digital environments and develop immersive games.</p>
+            <br>
+            <br>
+            <p>I am currently seeking for coop positions.</p>
+            <br>
+            <p>Feel free to get in touch! - jenise_c@hotmail.com</p>
+          </div>
+        </div>
+      </div>
     <br>
     <br>
     <br>
   </section>
 
+  <br>
+  <br>
+  <br>
+
   <div class="line"></div>
   <footer class="site-footer">
-    <div class="container">
     <div class="row">
       <div class="align">
         <div class="contact">
             <p class="footer-text">Get in touch</p>
-            <p class="footer-email">jca463@sfu.ca</p>
+            <p class="footer-email">jenise_c@hotmail.ca</p>
         </div>
         <div class="style">
           <a href="index.html">Style Guide</a>
@@ -63,4 +104,5 @@
     </div>
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
