@@ -35,6 +35,17 @@ inTextLinks.forEach(link => {
   });
 });
 
+const navLinks = document.querySelectorAll('.button-nav');
+
+// Add an event listener to each link
+navLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    navLinks.forEach(link => link.classList.remove('active'));
+    // Add the active class to the clicked link
+    link.classList.add('active');
+  });
+});
+
 
 
 // smooth-scrolling

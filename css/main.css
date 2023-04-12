@@ -219,6 +219,7 @@ code {
 .citations-right { 
   margin-top: 0rem;
   margin-left: 20%;
+  justify-content: center;
   /*border-left:1px solid #50A85E;*/
 }
 
@@ -227,16 +228,23 @@ code {
 }
 
 .right-side{
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 
 .citations-right h2 { 
-  margin-left: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .right-side h2 {
   text-align: center;
+}
+
+.right-side p {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .right-side .left{
@@ -264,7 +272,7 @@ code {
 }
 
 .citations-right p { 
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .rendered{
@@ -303,8 +311,8 @@ code {
 }
 
 .index-combined .line{
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
   overflow-x:hidden;
 }
 
@@ -420,13 +428,17 @@ code {
 }
 
 .button-nav{
-  background-color: #FFFAF0;
+  background-color: none;
   color:#000000;
   text-decoration: none;
 }
 
 .button-nav:hover{
   color:#50A85E;
+}
+
+.button-nav:active {
+  color: #50a85e;
 }
 
 .enter{
@@ -519,7 +531,7 @@ input[type="radio"]:checked {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-left: auto;
+  margin-left: 1rem;
   margin-right: auto;
 }
 
@@ -901,6 +913,7 @@ cursor: pointer;
 
 /*Citations Page*/
 .image-layout {
+  max-width: 95%;
   display: flex;
   flex-wrap: wrap;
   min-height: 100%;
@@ -909,6 +922,7 @@ cursor: pointer;
 .image-box {
   padding: 10px;
   max-width: 30%;
+  min-width: 30%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -1544,10 +1558,18 @@ cursor: pointer;
   }
 
   .intro_section .project-content{
-    margin-left: 0;
+    margin-left: 1rem;
     margin-right: 1rem;
   }
 
+  .project-explanation p{
+    margin-left: 1rem;
+  }
+
+  .project-explanation h2{
+    margin-left: 1rem;
+  }
+  
   .process-img{
     width: 50%;
   }
@@ -1566,7 +1588,7 @@ cursor: pointer;
 
   /*Citations*/
   .image-layout {
-    margin-left: auto;
+    margin-left: 1rem;
     margin-right: auto;
     padding:0;
     flex-direction: column;
@@ -1574,7 +1596,7 @@ cursor: pointer;
   }
 
   .image-layout .image-box {
-    max-width: 50%;
+    max-width: 75%;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
@@ -1598,34 +1620,30 @@ cursor: pointer;
     margin-bottom: 1rem;
     margin-right: 5rem;
   }
-    /*End of Citations page*/
-    .index-combined{
-      border:1px solid #d4a373;
-      margin-top:-2.5rem;
-      max-width: 100%;
+  /*End of Citations page*/
+  .index-combined{
+    max-width: 95%;
+    margin-left: 1rem;
+    margin-right: auto;
+    padding-top:3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 
-      margin-left: -1rem;
-      margin-right: -1rem;
-      padding-top:3rem;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
+  .index-content{
+    max-width: 95%;
+    margin-left: 1rem;
+    margin-right: auto;
+    padding-top:3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 
-    }
-
-    .index-content{
-
-      max-width: 100%;
-
-      margin-left: -1rem;
-      margin-right: -1rem;
-      padding-top:3rem;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-
-    }
-
-
+  .citations-right .line{ 
+    margin-left: 1rem;
+  }
 
 }
+
 
 /* End of Responsiveness --------------- */
