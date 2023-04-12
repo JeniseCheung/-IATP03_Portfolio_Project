@@ -1,0 +1,543 @@
+.topbanner2 {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFAF0;
+}
+
+.topbanner2 .logo{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-left: 2em;
+  text-align: center;
+}
+
+.topbanner2 .logo a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.topbanner2 ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFFAF0;
+}
+
+/*Top button*/
+.top-button-2 {
+  display: inline-block;
+  background-color: rgba(212, 163, 115, 0.75);
+  backdrop-filter: blur(0.1rem);
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-left: auto;
+  text-align: center;
+  border-radius: 40px;
+  position: relative;
+}
+
+.top-button-2::after {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, 175%) rotate(-45deg); 
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #FFFAF0; 
+  border-right: 2px solid #FFFAF0;
+}
+
+.top-button-2:hover {
+  cursor: pointer;
+  background-color: #A7C957;
+}
+
+/*Side-nav*/
+.index-left-2 {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-top: 0rem;
+  flex-direction: column;
+  position: relative;
+} 
+
+.index-left-2 a {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+  text-align: left;
+}
+
+.index-left-2 h2 {
+  text-align: left;
+
+}
+
+/*Bottom nav*/
+
+
+.mobile-bottom-nav-2{
+  overflow-x:hidden;
+  display: block;
+  position: relative;
+  margin-left: 12rem;
+  margin-bottom: 4rem;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.arrow-3 button{
+  width: 50px;
+  height: 50px;
+  margin-bottom:auto;
+  margin-top:auto;
+  position: relative;
+  z-index: 3;
+  background-color: rgba(212, 163, 115);
+  backdrop-filter: blur(0.1rem);
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow-3 button:hover{
+  background-color: #A7C957;
+}
+
+.arrow-3 button:before {
+  content: "";
+  position: absolute;
+  transform: translate(-30%, -50%) rotate(-135deg); 
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #FFFAF0; 
+  border-right: 2px solid #FFFAF0;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.arrow-2 button{
+  width: 50px;
+  height: 50px;
+  margin-left: 75%;
+  margin-bottom:auto;
+  margin-top:auto;
+  position: relative;
+  z-index: 3;
+  background-color: rgba(212, 163, 115);
+  backdrop-filter: blur(0.1rem);
+  border-radius: 40px;
+  border: none;
+}
+
+.arrow-2 button:hover{
+  background-color: #A7C957;
+}
+
+.arrow-2 button:before {
+  content: "";
+  position: absolute;
+  transform: translate(-30%, -50%) rotate(-135deg); 
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #FFFAF0; 
+  border-right: 2px solid #FFFAF0;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.mobile-bottom-nav-2 input:checked ~ .arrow-2 button {
+  transform: rotate(180deg);
+  background-color: rgba(212, 163, 115, 0);
+  backdrop-filter: blur(0);
+}
+
+.mobile-bottom-nav-2__item{
+  flex-grow:1;
+  text-align:center;
+  font-size:12px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+ }
+
+.mobile-bottom-nav-2 a{
+  text-decoration: none;  
+  transition: color 0.3s ease;
+}
+
+.mobile-bottom-nav-2 a:hover{
+  color: #50A85E;
+}
+
+ .mobile-bottom-nav-2 input[type="checkbox"] {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-left: 75%;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 4; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+  border-radius: 50%; /* make the checkbox round */
+  }
+
+.bottom-menu-2{
+  position: absolute;
+  width: 100%;
+  height:50px;
+  margin-left:0;
+  padding-right: 50px;
+  margin-top:-3.15rem;
+  border-radius: 40px; 
+  background-color: rgba(212, 163, 115, 0.5);
+  backdrop-filter: blur(0.1rem);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  display:flex;
+  z-index:2;
+}
+
+.mobile-bottom-nav-2 input:checked ~ .arrow-2 button:before {
+  border-top: 2px solid #A7C957; 
+  border-right: 2px solid #A7C957;
+}
+
+.mobile-bottom-nav-2 input:hover ~ .arrow-2 button {
+  background-color: #A7C957;
+}
+
+.mobile-bottom-nav-2 input:checked ~ .arrow-2 button{
+  background-color: rgba(212, 163, 115, 0);
+}
+
+/*
+ And let's slide it in from the left
+*/
+.mobile-bottom-nav-2 input:checked ~ .bottom-menu-2 {
+  transform: none;
+}
+
+/*Combining index*/
+
+
+.index-combined-2{
+  text-align: left;
+  border:1px solid #d4a373;
+  margin-top:-2.5rem;
+  max-width: 75%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:3rem;
+  padding-left:2rem;
+  padding-right:2rem;
+}
+
+.index-combined-2 .line{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  overflow-x:hidden;
+}
+
+/*hamburger animation*/
+.hamburger-2{
+  display:contents;
+}
+
+.hamburger-2 nav{
+  margin-top:2rem;
+}
+
+button{
+  background-color: #FFFAF0;
+  border:none;
+}
+
+.animated-icon1-2{
+  z-index: 3;
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  margin-left:50%;
+  margin-top:-3rem;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  background: var(--primary-color);
+}
+
+ 
+.animated-icon1-2 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.animated-icon1-2 span {
+  background: #d4a373;
+}
+
+.animated-icon1-2 span:nth-child(1) {
+  top: 0px;
+}
+
+.animated-icon1-2 span:nth-child(2) {
+  top: 10px;
+}
+
+.animated-icon1-2 span:nth-child(3) {
+  top: 20px;
+}
+
+.animated-icon1-2.open span:nth-child(1) {
+  top: 11px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.animated-icon1-2.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.animated-icon1-2.open span:nth-child(3) {
+  top: 11px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+/*End of Hamburger Page*/
+
+/*OVERLAY*/
+
+.menu-wrap-2 {
+  display:contents;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding:0;
+  z-index: 3;
+  
+}
+
+.menu-wrap-2 .toggler {
+  margin-top:26rem;
+  margin-left:50%;
+  position: absolute;
+  z-index: 4;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  opacity: 0;
+  color: #50A85E;
+}
+
+/* Show Menu */
+.menu-wrap-2 .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap-2 .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap-2 .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition:  opacity 0.4s ease 0.4s;
+}
+
+.menu-wrap-2 .menu {
+  padding:0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: #E9EDC9;
+  margin-left: 0;
+  margin-right: 0;
+  opacity: .9;
+}
+
+.menu-wrap-2 .menu > div {
+  background: var(--overlay-color);
+  border-radius: 50%;
+  padding:0;
+  margin-left: 0;
+  margin-right: 0;
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap-2 .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  margin-left: 0;
+  margin-right: 0;
+  padding:0;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.menu-wrap-2 .menu > div > div{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+}
+
+.menu-wrap-2 .menu > div > div > ul > li {
+  list-style: none;
+  color: #000000;
+  font-size: 1.5rem;
+  margin-left: -2rem;
+  padding-top: 1rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+
+}
+
+.menu-wrap-2 .menu > div > div > ul > li:hover {
+  color: #50A85E;
+}
+
+.menu-wrap-2 .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+
+
+@media screen and (max-width: 850px) {
+  
+  .arrow-2 button{
+    width: 50px;
+    height: 50px;
+    left: 7%;
+    margin-bottom:auto;
+    margin-top:auto;
+    position: relative;
+    z-index: 3;
+    background-color: rgba(212, 163, 115);
+    backdrop-filter: blur(0.1rem);
+    border-radius: 40px;
+    border: none;
+  }
+  
+  .mobile-bottom-nav-2 input[type="checkbox"] {
+    display: block;
+    width: 50px;
+    height: 50px;
+    left: 7%;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 4; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+    border-radius: 50%; /* make the checkbox round */
+  }
+
+
+  .mobile-bottom-nav-2{
+    max-width: 100%;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+    height:5rem;
+  }
+
+  
+  .bottom-menu-2{
+    position: absolute;
+    width: 100%;
+    height:50px;
+    margin-left:0%;
+    padding-right: 50px;
+    margin-top:-3.15rem;
+    border-radius: 40px; 
+    background-color: rgba(212, 163, 115, 0.5);
+    backdrop-filter: blur(0.1rem);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+      
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+  
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    display:flex;
+    z-index:2;
+  }
+
+  .index-combined-2{
+    border:1px solid #d4a373;
+    margin-top:-2.5rem;
+    max-width: 100%;
+
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-top:3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+  }
+
+}
