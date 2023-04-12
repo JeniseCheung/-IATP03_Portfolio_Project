@@ -136,7 +136,7 @@ li a:hover:not(.active) {
 }
 
 .site-footer .style{
-  margin-left:calc(100% - 12rem);
+  margin-left:calc(100% - 14rem);
   display:flex;
   flex-direction: column;
 }
