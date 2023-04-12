@@ -588,7 +588,7 @@ input[type="radio"]:checked {
   margin-right: auto;
 }
 
-.example{
+.me{
   max-width:90%;
   height:auto;
   margin-left: auto;
@@ -1465,7 +1465,7 @@ cursor: pointer;
 
   /*End of Home Page*/
 
-  .example{
+  .me{
     margin-top: 10rem;
     max-width:100%;
     text-align: center;
